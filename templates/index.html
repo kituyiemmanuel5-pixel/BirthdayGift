@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Birthday Gift ❤️</title>
+
+    <link rel="stylesheet" href="{{url_for('static', filename='css/style.css')}}">
+</head>
+
+<body>
+    <div class="birthday-screen" id="lockScreen">
+        <div class="lock-screen">
+
+            <div class="photo-circle">
+                <img src="{{ url_for('static', filename='images/birthday.jpg') }}" alt="Birthday photo">
+    </div>
+
+        <h1>LOCKED 🔒</h1>
+
+        <p>Something special is waiting for you...</p>
+
+        <div class="pin-display">
+            <span>○</span>
+            <span>○</span>
+            <span>○</span>
+            <span>○</span>
+        </div>
+        <p>Enter the secret PIN</p>
+        <div class="keypad">
+
+    <button onclick="pressKey('1')">1</button>
+    <button onclick="pressKey('2')">2</button>
+    <button onclick="pressKey('3')">3</button>
+
+    <button onclick="pressKey('4')">4</button>
+    <button onclick="pressKey('5')">5</button>
+    <button onclick="pressKey('6')">6</button>
+
+    <button onclick="pressKey('7')">7</button>
+    <button onclick="pressKey('8')">8</button>
+    <button onclick="pressKey('9')">9</button>
+
+    <button onclick="clearPin()">⌫</button>
+    <button onclick="pressKey('0')">0</button>
+    <button onclick="checkPin()">✓</button>
+
+        </div>
+    </div>
+</div>
+
+    <div class="welcome-screen" id="welcomeScreen">
+
+        <h1>It's Your Special Day 🎂</h1>
+
+        <p>Today is all about you ❤️</p>
+
+        <button onclick="startGift()">START</button>
+
+    </div>
+    <div class="gift-screen" id="giftScreen">
+        <img 
+            src="{{ url_for('static', filename='images/birthday.jpg') }}" 
+            alt="Birthday photo"
+            class="gift-photo"
+            
+    >
+
+    <h1>🎉 Happy Birthday! 🎉</h1>
+
+    <p>I have something special for you ❤️</p>
+    <audio id="birthdayMusic" loop>
+    <source src="{{ url_for('static', filename='music/birthday.mp3') }}" type="audio/mpeg">
+</audio>
+<div class="birthday-message" id="birthdayMessage">
+
+    <h2>❤️ Happy Birthday ❤️</h2>
+
+    <p>
+        Getting to know you has been one of those unexpected
+        things I'm genuinely grateful for.
+    </p>
+
+    <p>
+        The moments, the laughter, the late-night texts,
+        the random conversations, and all those little
+        memories we've made have meant more to me than
+        I probably ever said.
+    </p>
+
+    <p>
+        Thank you for every smile, every laugh, and every
+        moment youve shared with me. I truly appreciate you.
+    </p>
+
+    <p>
+        Today, I hope you get to feel just how special you are.
+        May your day be filled with happiness, peace, laughter,
+        and beautiful moments.
+    </p>
+
+    <p>
+        And as you continue through life, may your dreams
+        come closer, your efforts bear fruit, and may you
+        always have reasons to smile.
+    </p>
+
+    <p>
+        <strong>Happy Birthday ❤️🎂</strong>
+    </p>
+    <p class="final-wish">And once again... Happy Birthday ❤️</p>
+
+</div>
+
+</div>
+    
+<script src="{{ url_for('static', filename='js/script.js') }}"></script>
+</body>
+</html>
