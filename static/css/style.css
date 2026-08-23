@@ -113,7 +113,7 @@ body{
 }
 #welcomeScreen {
     display: none;
-    min-height: 100vh;
+    min-height: 100svh;
     flex-direction: column;
     justify-content: center;
     align-items: center;
@@ -121,7 +121,7 @@ body{
     color: white;
 }
 #welcomeScreen {
-    min-height: 100vh;
+    min-height: 100svh;
     flex-direction: column;
     justify-content: center;
     align-items: center;
@@ -151,7 +151,7 @@ body{
 }
 .gift-screen {
     display: none;
-    min-height: 100vh;
+    min-height: 100svh;
     flex-direction: column;
     justify-content: center;
     align-items: center;
@@ -409,7 +409,7 @@ animation:
     }
 
     .gift-screen {
-        min-height: 100vh;
+        min-height: 100svh;
         padding: 20px 15px;
         box-sizing: border-box;
         overflow-y: auto;
