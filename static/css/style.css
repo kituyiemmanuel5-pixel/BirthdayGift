@@ -468,3 +468,6 @@ html {
         transform: translateY(0);
     }
 }
+#birthdayMessage p{
+    font-family: "Dancing Script", cursive;
+}
